@@ -1,0 +1,249 @@
+.cardParent {
+    border: 2px solid black;
+    border-radius: 5px;
+    /* width: 99%; */
+    min-height: 80vh;
+    margin: auto;
+    /* width: 100%; */
+    background-image: url("https://html.sammy-codes.com/images/background.jpg");
+    /* background-blend-mode: lighten; */
+}
+
+.card {
+    /* border: 2px solid green; */
+    /* padding: 2%; */
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgba(213, 222, 211, 0.7);
+    border-radius: 15px;
+    /* width: 70%; */
+    margin-bottom: 1%;
+    padding-left: 2%;
+}
+
+.card:hover {
+    box-shadow: 2px 0px 2px 5px rgb(251, 248, 248, 0.4);
+}
+
+.title {
+    /* border: 2px solid red; */
+    width: 70%;
+    font-size: 1.2em;
+}
+
+.title input {
+    padding: 1%;
+    width: 60%;
+    margin-right: 2%;
+    font-size: medium;
+    border-radius: 5px;
+}
+
+.title button {
+    padding: 1%;
+    width: 20%;
+    border-radius: 5px;
+    font-size: medium;
+    font-weight: bold;
+    background-color: rgb(224, 222, 125);
+    cursor: pointer;
+}
+
+.buttons {
+    /* border: 2px solid brown; */
+    width: 28%;
+}
+
+.buttons button {
+    width: 30%;
+    margin-left: 2%;
+    padding: 1.5%;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.sortdiv {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 30%;
+    padding: 0.5%;
+    border-radius: 5px;
+    justify-content: space-evenly;
+    background-color: rgb(235, 237, 240, 0.5);
+}
+
+.flexy {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    width: fit-content;
+    margin: auto;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.draggablediv {
+    /* border: 2px solid red; */
+    /* margin-top: 2%; */
+    padding-top: 2%;
+}
+
+.dropdiv {
+    /* border: 2px solid brown; */
+    text-align: center;
+    /* padding-top: 2%; */
+    width: 70%;
+    margin: auto;
+}
+
+.textboxadd {
+    /* border: 2px solid red; */
+    margin-bottom: 1%;
+}
+
+.textboxadd input {
+    padding: 0.5%;
+    background-color: rgba(246, 236, 236, 0.5);
+    margin-right: 2%;
+    width: 30%;
+}
+
+.textboxadd button {
+    padding: 0.5%;
+    width: 10%;
+    background-color: blueviolet;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.textsort {
+    font-size: medium;
+    font-weight: bold;
+}
+
+@media only screen and (min-width:600px) and (max-width:950px) {
+    .title {
+        /* border: 2px solid red; */
+        width: 60%;
+        font-size: 1.2em;
+    }
+
+    .buttons {
+        width: 40%;
+    }
+
+    .buttons button {
+        width: 30%;
+        margin-left: 2%;
+        padding: 1.5%;
+        font-size: small;
+        font-weight: bold;
+        background-color: blueviolet;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    .dropdiv {
+        /* border: 2px solid brown; */
+        text-align: center;
+        /* padding-top: 2%; */
+        width: 90%;
+        margin: auto;
+    }
+
+    .sortdiv {
+        /* border: 2px solid red; */
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        width: 50%;
+        padding: 0.5%;
+        border-radius: 5px;
+        justify-content: space-evenly;
+        background-color: rgb(235, 237, 240, 0.5);
+    }
+}
+
+@media only screen and (max-width:559px) {
+    .title {
+        /* border: 2px solid red; */
+        width: 60%;
+        font-size: 1.2em;
+    }
+
+    .title input {
+        width: 80%;
+    }
+
+    .title button {
+        width: 50%;
+    }
+
+    .buttons {
+        width: 40%;
+    }
+
+    .buttons button {
+        width: 40%;
+        margin-left: 2%;
+        padding: 1.5%;
+        font-size: 0.7em;
+        font-weight: bold;
+        background-color: blueviolet;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    .dropdiv {
+        /* border: 2px solid brown; */
+        text-align: center;
+        /* padding-top: 2%; */
+        width: 90%;
+        margin: auto;
+    }
+
+    .sortdiv {
+        /* border: 2px solid red; */
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        width: 90%;
+        padding: 0.5%;
+        border-radius: 5px;
+        justify-content: space-evenly;
+        background-color: rgb(235, 237, 240, 0.5);
+    }
+
+    .textboxadd input {
+        padding: 0.5%;
+        background-color: rgba(246, 236, 236, 0.5);
+        margin-right: 2%;
+        width: 60%;
+    }
+
+    .textboxadd button {
+        padding: 0.5%;
+        width: 20%;
+        background-color: blueviolet;
+        color: white;
+        font-size: medium;
+        font-weight: bold;
+    }
+}
