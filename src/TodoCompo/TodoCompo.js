@@ -1,6 +1,12 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { IoMdAddCircle } from "react-icons/io";
+import { FaEdit } from "react-icons/fa";
+import { MdDelete } from "react-icons/md";
+import { IoArrowUndoCircleSharp } from "react-icons/io5";
+import { FaStrikethrough } from "react-icons/fa6";
+
+
 // import { DragDropContext, Draggable, Droppable } from 'react-beautiful-dnd';
 
 function TodoCompo() {
@@ -116,7 +122,7 @@ function TodoCompo() {
     const filteredList = getFilteredList();
     return (
         <div className='cardParent' >
-            <h1><span className='strike'>ToDO</span> - LIST</h1>
+            <h1><span className='strike'>ToDO</span> LIST</h1>
             <div className='flexy'>
                 <h2 className='cursor' onClick={() => setadd(true)}><IoMdAddCircle size={"1.2em"} /></h2>
                 <h2 className='cursor' onClick={() => setadd(true)}>Add new Task</h2>
@@ -163,13 +169,17 @@ function TodoCompo() {
                                 <div className='buttons'>
                                     <h4>
                                         {item.completed === false && (
-                                            <button onClick={() => handleEdit(item.id, item.title)}>Edit</button>
+                                            <button onClick={() => handleEdit(item.id, item.title)}><FaEdit size={"1.5em"} />
+                                            </button>
                                         )}
-                                        <button onClick={() => handleDelete(item.id)}>Delete</button>
+                                        <button onClick={() => handleDelete(item.id)}><MdDelete size={"1.5em"} />
+                                        </button>
                                         {item.completed ? (
-                                            <button onClick={() => handleundo(item.id)}>Undo</button>
+                                            <button onClick={() => handleundo(item.id)}><IoArrowUndoCircleSharp size={"1.5em"} />
+                                            </button>
                                         ) : (
-                                            <button onClick={() => handleComplete(item.id)}>Complete</button>
+                                            <button onClick={() => handleComplete(item.id)}><FaStrikethrough size={"1.5em"} />
+                                            </button>
                                         )}
                                     </h4>
                                 </div>

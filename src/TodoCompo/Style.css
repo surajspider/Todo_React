@@ -6,17 +6,19 @@
     margin: auto;
     /* width: 100%; */
     background-image: url("https://html.sammy-codes.com/images/background.jpg");
+    filter: brightness(82%);
     /* background-blend-mode: lighten; */
 }
 
 .card {
     /* border: 2px solid green; */
     /* padding: 2%; */
+    filter: brightness(160%);
     text-align: left;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: rgba(213, 222, 211, 0.7);
+    background-color: rgba(213, 222, 211, 0.8);
     border-radius: 15px;
     /* width: 70%; */
     margin-bottom: 1%;
@@ -29,7 +31,7 @@
 
 .title {
     /* border: 2px solid red; */
-    width: 70%;
+    width: 78%;
     font-size: 1.2em;
 }
 
@@ -53,7 +55,7 @@
 
 .buttons {
     /* border: 2px solid brown; */
-    width: 28%;
+    width: 20%;
 }
 
 .buttons button {
@@ -62,8 +64,9 @@
     padding: 1.5%;
     font-size: 1em;
     font-weight: bold;
-    background-color: blueviolet;
-    color: white;
+    /* background-color: blueviolet; */
+    /* color: white; */
+    background: none;
     border: none;
     cursor: pointer;
 }
